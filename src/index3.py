@@ -1,47 +1,44 @@
-from taipy import Gui
+import streamlit as st
 import pandas as pd
-# import folium
+import streamlit.components.v1 as components
 
-
+# Set initial week number
 n_week = 40
-map_url = "http://localhost:5001/"
-iframe_html = f'<iframe src="{map_url}" width="100%" height="500" style="border:none;"></iframe>'
 
-# map_url = "http://127.0.0.1:5500/Hacklytics/pulse/src/static/map.html"
-# iframe_html = f'<iframe src="{map_url}" width="100%" height="500" style="border:none;"></iframe>'
-
-
+# Define function to read DataFrame from CSV
 def read_df(data_path: str):
     df = pd.read_csv(data_path)
     df["Date"] = pd.to_datetime(df["Date"])
     return df
 
-dataset = read_df("./dataset/dataset.csv")
+# Read dataset
+dataset = read_df("/Users/joshuadonatien/Documents/pulse/src/dataset/dataset.csv")
+
+# Filter dataset for the initial week number
 dataset_week = dataset[dataset["Date"].dt.isocalendar().week == n_week]
 
+# Define function to handle widget changes
+def on_change(n_week):
+    # Filter dataset based on selected week number
+    dataset_week = dataset[dataset["Date"].dt.isocalendar().week == n_week]
 
-def on_change(state, var_name: str, var_value):
-    if var_name == "n_week":
-        state.dataset_week = dataset[dataset["Date"].dt.isocalendar().week == var_value]
+    # Display the updated dataset
+    st.dataframe(dataset_week)
 
+# Define Streamlit app layout
+st.title("Pulse")
 
-# state.n_week = 10
-# <|{var_name|visual_element|param_1=param_1|param_2=param_2|...|>
-PAGE = '''
-# Pulse
+# Week number slider
+n_week = st.slider("Week number", min_value=1, max_value=40, value=n_week, step=1, key="week_slider")
+path_to_html=""
+# Display Folium Map using an iframe
+components.iframe(f'<iframe src="http://localhost:5001/" width="100%" height="500" style="border:none;"></iframe>')
 
-Week number: <|{n_week}|>
+# Display bar graph
+st.bar_chart(dataset_week.set_index("Date")["Value"])
 
-<|{n_week}|slider|min=1|max=40|> 
+# Display data table
+st.dataframe(dataset)
 
-## Folium Map
-<|{iframe_html}|>
-
-## Bar Graph
-<|{dataset_week}|chart|type=bar|x=Date|y=Value|height=100%|width=100%|>
-
-## Data Table
-<|{dataset}|table|height=400px|width=95%|>
-
-'''
-Gui(page=PAGE).run(dark_mode=True)
+# Call on_change function when the week number slider value changes
+on_change(n_week)
