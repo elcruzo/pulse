@@ -32,7 +32,15 @@ def on_change(state, var_name: str, var_value):
         map_data = fetch_map_data(var_value)
         if map_data:
             state.map_data = map_data
-            
+
+    """
+    Updates the state based on the variable name and value.
+    
+    Args:
+        state: The current state object to be updated.
+        var_name: The name of the variable that triggered the change.
+        var_value: The new value of the variable.
+    """
 n_week = 40
 dataset_week = dataset[dataset["Date"].dt.isocalendar().week == n_week]
 map_data = fetch_map_data(n_week)
