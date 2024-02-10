@@ -1,45 +1,29 @@
-import dash
-from dash import dcc, html
-from dash.dependencies import Input, Output
-import plotly.express as px
-import pandas as pd
+# import geopandas as gpd
+# import folium
 
-app = dash.Dash(__name__)
+# # world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+# # world.plot()
 
-data = {
-    'iso_alpha': ['USA', 'CAN', 'MEX'],
-    'info': ['Info about USA', 'Info about Canada', 'Info about Mexico']
-}
 
-df = pd.DataFrame(data)
+# # import matplotlib.pyplot as plt
+# # plt.show()
 
-# Creating the choropleth figure
-fig = px.choropleth(df, locations='iso_alpha', hover_name='info', projection='natural earth')
+import folium
 
-app.layout = html.Div([
-    dcc.Graph(id='world-map', figure=fig),
-    html.Div(id='country-info')  # This Div will display information based on interactions
-])
+center = [45, -30]
 
-@app.callback(
-    Output('country-info', 'children'),
-    [Input('world-map', 'hoverData'), Input('world-map', 'clickData')]
-)
-def display_interactive_data(hoverData, clickData):
-    # Prioritize click data over hover data
-    ctx = dash.callback_context
-    if not ctx.triggered:
-        trigger_id = 'No clicks yet'
-    else:
-        trigger_id = ctx.triggered[0]['prop_id'].split('.')[0]
-    
-    if trigger_id == 'world-map' and clickData:
-        info = clickData['points'][0]['hovertext']
-        return html.P(f"Clicked info: {info}")
-    elif hoverData:
-        info = hoverData['points'][0]['hovertext']
-        return html.P(f"Hover info: {info}")
-    return "Hover over or click on a country to see information."
+m = folium.Map(location=center, zoom_start=3)
 
-if __name__ == '__main__':
-    app.run_server(debug=True)
+# folium.Marker([33.756342349687586, -84.39351094004493], popup='<h1>My Favourite Stadium</h1><img src="stadium.jpeg" width=400px><p>This is the best stadium out in Atl</p>', tooltip='ElCruzo Stadium', icon=folium.Icon(icon='heart', icon_color='red', color='green')).add_to(m)
+
+# folium.Circle(
+#     location=(33.75596703814469, -84.38916676893841),
+#     radius=800,
+#     popup="Love the area",
+#     color='blue',
+#     fill=True,
+#     fill_color='blue'
+# ).add_to(m)
+
+m.save('map.html')
+

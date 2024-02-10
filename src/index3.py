@@ -4,11 +4,21 @@ import pandas as pd
 
 
 n_week = 40
-map_url = "http://localhost:5001/"
-iframe_html = f'<iframe src="{map_url}" width="100%" height="500" style="border:none;"></iframe>'
-
-# map_url = "http://127.0.0.1:5500/Hacklytics/pulse/src/static/map.html"
+# map_url = "http://localhost:5001/"
 # iframe_html = f'<iframe src="{map_url}" width="100%" height="500" style="border:none;"></iframe>'
+
+class Iframe:
+    def __init__(self, src: str, width: str = "100%", height: str = "500"):
+        self.src = src
+        self.width = width
+        self.height = height
+    
+    def to_html(self) -> str:
+        return f'<iframe src="{self.src}" width="{self.width}" height="{self.height}" style="border:none;"></iframe>'
+    
+map_url = "http://127.0.0.1:5500/Hacklytics/pulse/src/index.html"
+iframe = Iframe(map_url)
+iframe_html = iframe.to_html()
 
 
 def read_df(data_path: str):
