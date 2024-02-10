@@ -1,65 +1,28 @@
-import pandas as pd
-from taipy import Gui
-import requests
+# import geopandas as gpd
+# import folium
 
-def read_df(data_path: str):
-    df = pd.read_csv(data_path)
-    df["Date"] = pd.to_datetime(df["Date"])
-    return df
+# # world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+# # world.plot()
 
-dataset = read_df("./dataset/dataset.csv")
 
-# def fetch_map_data(week_number):
-#     response = requests.get(f'http://localhost:8000/map-data?week={week_number}')
-#     if response.status_code == 200:
-#         return response.json()
-#     else:
-#         return None
+# # import matplotlib.pyplot as plt
+# # plt.show()
 
-def fetch_map_data(week_number):
-    response = requests.get(f'http://localhost:8000/map-data?week={week_number}')
-    if response.status_code == 200:
-        map_data = response.json()
-        # Format map data for the GUI
-        formatted_map_data = f'<|{json.dumps(map_data)}|map|height=600px|width=100%|>'
-        return formatted_map_data
-    else:
-        return None
-    
-def on_change(state, var_name: str, var_value):
-    if var_name == "n_week":
-        state.dataset_week = dataset[dataset["Date"].dt.isocalendar().week == var_value]
-        map_data = fetch_map_data(var_value)
-        if map_data:
-            state.map_data = map_data
+import folium
 
-    """
-    Updates the state based on the variable name and value.
-    
-    Args:
-        state: The current state object to be updated.
-        var_name: The name of the variable that triggered the change.
-        var_value: The new value of the variable.
-    """
-n_week = 40
-dataset_week = dataset[dataset["Date"].dt.isocalendar().week == n_week]
-map_data = fetch_map_data(n_week)
+center = [45, -30]
 
-PAGE = f'''
-# Pulse
+m = folium.Map(location=center, zoom_start=3)
 
-Week number: <|{n_week}|>
+# folium.Marker([33.756342349687586, -84.39351094004493], popup='<h1>My Favourite Stadium</h1><img src="stadium.jpeg" width=400px><p>This is the best stadium out in Atl</p>', tooltip='ElCruzo Stadium', icon=folium.Icon(icon='heart', icon_color='red', color='green')).add_to(m)
 
-<|{n_week}|slider|min=1|max=40|> 
+# folium.Circle(
+#     location=(33.75596703814469, -84.38916676893841),
+#     radius=800,
+#     popup="Love the area",
+#     color='blue',
+#     fill=True,
+#     fill_color='blue'
+# ).add_to(m)
 
-## Bar Graph
-<|{dataset_week}|chart|type=bar|x=Date|y=Value|height=100%|width=100%|>
-
-## World Map
-<|{map_data}|map|height=600px|width=100%|>
-
-## Data Table
-<|{dataset}|table|height=400px|width=95%|>
-'''
-
-Gui(page=PAGE).run(dark_mode=True)
+m.save('map.html')
