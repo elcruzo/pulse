@@ -18,6 +18,11 @@ Week number: <|{n_week}|>
 
 <|{n_week}|slider|min=1|max=40|> 
 
+## Data Table
 <|{dataset}|table|height=400px|width=95%|>
+
+
+## Bar Graph
+<|{dataset}|chart|type=bar|x=Date|y=Value|>
 '''
 Gui(page=page).run(dark_mode=True)
