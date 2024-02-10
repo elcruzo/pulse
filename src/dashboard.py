@@ -26,4 +26,3 @@ m = folium.Map(location=center, zoom_start=3)
 # ).add_to(m)
 
 m.save('map.html')
-
