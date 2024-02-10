@@ -27,6 +27,9 @@ Week number: <|{n_week}|>
 
 <|{n_week}|slider|min=1|max=40|> 
 
+## Interactive Map
+<|html|content=<iframe src="http://127.0.0.1:8050/" width="100%" height="600"></iframe>|>
+
 ## Bar Graph
 <|{dataset_week}|chart|type=bar|x=Date|y=Value|height=100%|width=100%|>
 
