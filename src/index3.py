@@ -2,7 +2,7 @@ from taipy import Gui
 from taipy.gui import Html
 import pandas as pd
 # import folium
-
+# Week number: <|{n_week}|>
 
 n_week = 40
 map_url = "index.html"
@@ -16,25 +16,12 @@ html_component = Html(html_content)
 
 map_component = Html(iframe_html)
 
-# class Iframe:
-#     def __init__(self, src: str, width: str = "100%", height: str = "500"):
-#         self.src = src
-#         self.width = width
-#         self.height = height
-    
-#     def to_html(self) -> str:
-#         return f'<iframe src="{self.src}" width="{self.width}" height="{self.height}" style="border:none;"></iframe>'
-    
-# map_url = "http://127.0.0.1:5500/Hacklytics/pulse/src/index.html"
-# iframe = Iframe(map_url)
-# iframe_html = iframe.to_html()
-
-
 def read_df(data_path: str):
     df = pd.read_csv(data_path)
     df["Date"] = pd.to_datetime(df["Date"])
     return df
 
+stockdataset = read_df("./dataset/stock_data.csv")
 dataset = read_df("./dataset/dataset.csv")
 dataset_week = dataset[dataset["Date"].dt.isocalendar().week == n_week]
 
@@ -43,26 +30,16 @@ def on_change(state, var_name: str, var_value):
     if var_name == "n_week":
         state.dataset_week = dataset[dataset["Date"].dt.isocalendar().week == var_value]
 
-
-hello = "hi"
-
-# state.n_week = 10
-# <|{var_name|visual_element|param_1=param_1|param_2=param_2|...|>
 PAGE = '''
 # Pulse
 
-Week number: <|{n_week}|>
+<|{n_week}|slider|min=1|max=40|>
 
-<|{n_week}|slider|min=1|max=40|> 
-
-## World Map
-<|{html_component}|>
+## Performance Analysis After Natural Disasters
+<|{stockdataset}|table|height=400px|width=95%|>
 
 ## Bar Graph
 <|{dataset_week}|chart|type=bar|x=Date|y=Value|height=100%|width=100%|>
-
-## Data Table
-<|{dataset}|table|height=400px|width=95%|>
 
 '''
 

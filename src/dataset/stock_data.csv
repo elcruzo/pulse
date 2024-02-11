@@ -1,0 +1,201 @@
+Index,Company,Abbreviation,Date,Percentage,Trend
+1,NVIDIA,NVDA,2022-06-14,3.75%,↑
+2,Facebook,FB,2022-06-15,2.02%,↑
+3,Facebook,FB,2022-06-16,-1.18%,↓
+4,Tesla,TSLA,2022-06-17,-0.84%,↓
+5,Google,GOOG,2022-06-18,4.6%,↑
+6,Microsoft,MSFT,2022-06-19,4.07%,↑
+7,Amazon,AMZN,2022-06-20,-1.44%,↓
+8,Google,GOOG,2022-06-21,4.56%,↑
+9,Berkshire Hathaway,BRK.A,2022-06-22,4.72%,↑
+10,Amazon,AMZN,2022-06-23,-3.34%,↓
+11,Facebook,FB,2022-06-24,-3.99%,↓
+12,Berkshire Hathaway,BRK.A,2022-06-25,3.32%,↑
+13,Berkshire Hathaway,BRK.A,2022-06-26,-1.57%,↓
+14,Tesla,TSLA,2022-06-27,0.42%,↑
+15,Visa,V,2022-06-28,2.12%,↑
+16,Visa,V,2022-06-29,4.98%,↑
+17,Microsoft,MSFT,2022-06-30,-3.16%,↓
+18,Google,GOOG,2022-07-01,-1.29%,↓
+19,Berkshire Hathaway,BRK.A,2022-07-02,3.31%,↑
+20,Visa,V,2022-07-03,-4.13%,↓
+21,Google,GOOG,2022-07-04,1.33%,↑
+22,Visa,V,2022-07-05,2.72%,↑
+23,Berkshire Hathaway,BRK.A,2022-07-06,1.83%,↑
+24,Berkshire Hathaway,BRK.A,2022-07-07,0.64%,↑
+25,Apple Inc.,AAPL,2022-07-08,1.97%,↑
+26,Visa,V,2022-07-09,0.95%,↑
+27,Facebook,FB,2022-07-10,1.38%,↑
+28,NVIDIA,NVDA,2022-07-11,3.12%,↑
+29,Berkshire Hathaway,BRK.A,2022-07-12,3.12%,↑
+30,Google,GOOG,2022-07-13,2.15%,↑
+31,Google,GOOG,2022-07-14,-4.26%,↓
+32,NVIDIA,NVDA,2022-07-15,3.1%,↑
+33,Apple Inc.,AAPL,2022-07-16,3.27%,↑
+34,Tesla,TSLA,2022-07-17,0.69%,↑
+35,Microsoft,MSFT,2022-07-18,-3.84%,↓
+36,Facebook,FB,2022-07-19,-2.75%,↓
+37,Tesla,TSLA,2022-07-20,2.91%,↑
+38,Tesla,TSLA,2022-07-21,0.36%,↑
+39,Microsoft,MSFT,2022-07-22,4.29%,↑
+40,Google,GOOG,2022-07-23,-0.2%,↓
+41,NVIDIA,NVDA,2022-07-24,-3.64%,↓
+42,Visa,V,2022-07-25,3.69%,↑
+43,Google,GOOG,2022-07-26,0.53%,↑
+44,Visa,V,2022-07-27,-1.32%,↓
+45,Visa,V,2022-07-28,0.57%,↑
+46,Facebook,FB,2022-07-29,-4.73%,↓
+47,Tesla,TSLA,2022-07-30,0.43%,↑
+48,Facebook,FB,2022-07-31,-4.42%,↓
+49,Netflix,NFLX,2022-08-01,0.34%,↑
+50,Netflix,NFLX,2022-08-02,-1.93%,↓
+51,Tesla,TSLA,2022-08-03,0.33%,↑
+52,Tesla,TSLA,2022-08-04,1.96%,↑
+53,Microsoft,MSFT,2022-08-05,1.66%,↑
+54,Microsoft,MSFT,2022-08-06,-4.29%,↓
+55,Apple Inc.,AAPL,2022-08-07,-5.0%,↓
+56,Apple Inc.,AAPL,2022-08-08,-1.64%,↓
+57,Apple Inc.,AAPL,2022-08-09,3.4%,↑
+58,Facebook,FB,2022-08-10,4.4%,↑
+59,NVIDIA,NVDA,2022-08-11,-2.06%,↓
+60,Amazon,AMZN,2022-08-12,4.37%,↑
+61,Visa,V,2022-08-13,-4.55%,↓
+62,Berkshire Hathaway,BRK.A,2022-08-14,-1.76%,↓
+63,Amazon,AMZN,2022-08-15,-3.89%,↓
+64,Google,GOOG,2022-08-16,3.65%,↑
+65,Apple Inc.,AAPL,2022-08-17,1.19%,↑
+66,Amazon,AMZN,2022-08-18,0.52%,↑
+67,Netflix,NFLX,2022-08-19,-3.65%,↓
+68,Berkshire Hathaway,BRK.A,2022-08-20,2.29%,↑
+69,Facebook,FB,2022-08-21,3.54%,↑
+70,Microsoft,MSFT,2022-08-22,1.46%,↑
+71,Visa,V,2022-08-23,-4.57%,↓
+72,Microsoft,MSFT,2022-08-24,1.51%,↑
+73,Visa,V,2022-08-25,-3.77%,↓
+74,Google,GOOG,2022-08-26,-3.79%,↓
+75,Facebook,FB,2022-08-27,-3.38%,↓
+76,Tesla,TSLA,2022-08-28,-3.98%,↓
+77,Netflix,NFLX,2022-08-29,0.23%,↑
+78,Apple Inc.,AAPL,2022-08-30,-4.44%,↓
+79,Visa,V,2022-08-31,-0.27%,↓
+80,NVIDIA,NVDA,2022-09-01,-2.43%,↓
+81,Tesla,TSLA,2022-09-02,-1.26%,↓
+82,Facebook,FB,2022-09-03,2.1%,↑
+83,Facebook,FB,2022-09-04,2.11%,↑
+84,Amazon,AMZN,2022-09-05,4.57%,↑
+85,Google,GOOG,2022-09-06,0.4%,↑
+86,Berkshire Hathaway,BRK.A,2022-09-07,-2.05%,↓
+87,Apple Inc.,AAPL,2022-09-08,4.47%,↑
+88,Google,GOOG,2022-09-09,2.88%,↑
+89,Apple Inc.,AAPL,2022-09-10,-3.09%,↓
+90,Google,GOOG,2022-09-11,-0.14%,↓
+91,Amazon,AMZN,2022-09-12,-2.89%,↓
+92,Facebook,FB,2022-09-13,-4.84%,↓
+93,Netflix,NFLX,2022-09-14,1.9%,↑
+94,Visa,V,2022-09-15,3.95%,↑
+95,Amazon,AMZN,2022-09-16,0.62%,↑
+96,Visa,V,2022-09-17,-0.48%,↓
+97,Google,GOOG,2022-09-18,-1.73%,↓
+98,NVIDIA,NVDA,2022-09-19,2.92%,↑
+99,Tesla,TSLA,2022-09-20,3.34%,↑
+100,Apple Inc.,AAPL,2022-09-21,0.93%,↑
+101,Visa,V,2022-09-22,-3.85%,↓
+102,Berkshire Hathaway,BRK.A,2022-09-23,-3.91%,↓
+103,Visa,V,2022-09-24,-2.68%,↓
+104,Microsoft,MSFT,2022-09-25,1.97%,↑
+105,Amazon,AMZN,2022-09-26,4.68%,↑
+106,Google,GOOG,2022-09-27,-4.49%,↓
+107,Apple Inc.,AAPL,2022-09-28,1.43%,↑
+108,Google,GOOG,2022-09-29,-0.89%,↓
+109,NVIDIA,NVDA,2022-09-30,0.05%,↑
+110,Tesla,TSLA,2022-10-01,1.68%,↑
+111,Amazon,AMZN,2022-10-02,-3.26%,↓
+112,Facebook,FB,2022-10-03,-1.4%,↓
+113,Google,GOOG,2022-10-04,-2.44%,↓
+114,Google,GOOG,2022-10-05,0.44%,↑
+115,Google,GOOG,2022-10-06,-2.27%,↓
+116,Tesla,TSLA,2022-10-07,-4.62%,↓
+117,Tesla,TSLA,2022-10-08,0.9%,↑
+118,Tesla,TSLA,2022-10-09,-3.39%,↓
+119,Apple Inc.,AAPL,2022-10-10,1.46%,↑
+120,Netflix,NFLX,2022-10-11,1.11%,↑
+121,Tesla,TSLA,2022-10-12,-3.09%,↓
+122,Microsoft,MSFT,2022-10-13,-1.13%,↓
+123,NVIDIA,NVDA,2022-10-14,-4.73%,↓
+124,Apple Inc.,AAPL,2022-10-15,-3.61%,↓
+125,Netflix,NFLX,2022-10-16,-0.56%,↓
+126,Netflix,NFLX,2022-10-17,0.98%,↑
+127,NVIDIA,NVDA,2022-10-18,0.61%,↑
+128,Tesla,TSLA,2022-10-19,-3.06%,↓
+129,Tesla,TSLA,2022-10-20,-4.12%,↓
+130,Google,GOOG,2022-10-21,-3.03%,↓
+131,Berkshire Hathaway,BRK.A,2022-10-22,-3.51%,↓
+132,Amazon,AMZN,2022-10-23,-1.81%,↓
+133,Visa,V,2022-10-24,-3.83%,↓
+134,Berkshire Hathaway,BRK.A,2022-10-25,-0.76%,↓
+135,Apple Inc.,AAPL,2022-10-26,-2.15%,↓
+136,Amazon,AMZN,2022-10-27,-2.83%,↓
+137,Amazon,AMZN,2022-10-28,-4.38%,↓
+138,Facebook,FB,2022-10-29,3.53%,↑
+139,Berkshire Hathaway,BRK.A,2022-10-30,2.9%,↑
+140,Facebook,FB,2022-10-31,0.38%,↑
+141,Google,GOOG,2022-11-01,-2.4%,↓
+142,Tesla,TSLA,2022-11-02,-4.45%,↓
+143,Netflix,NFLX,2022-11-03,-1.89%,↓
+144,NVIDIA,NVDA,2022-11-04,1.56%,↑
+145,Google,GOOG,2022-11-05,2.01%,↑
+146,Netflix,NFLX,2022-11-06,-4.56%,↓
+147,Apple Inc.,AAPL,2022-11-07,4.52%,↑
+148,Amazon,AMZN,2022-11-08,0.6%,↑
+149,Google,GOOG,2022-11-09,0.66%,↑
+150,Google,GOOG,2022-11-10,-1.94%,↓
+151,NVIDIA,NVDA,2022-11-11,1.0%,↑
+152,Apple Inc.,AAPL,2022-11-12,2.02%,↑
+153,Google,GOOG,2022-11-13,-1.89%,↓
+154,Berkshire Hathaway,BRK.A,2022-11-14,0.29%,↑
+155,Apple Inc.,AAPL,2022-11-15,3.57%,↑
+156,Facebook,FB,2022-11-16,3.19%,↑
+157,Apple Inc.,AAPL,2022-11-17,-3.48%,↓
+158,Amazon,AMZN,2022-11-18,-2.71%,↓
+159,Netflix,NFLX,2022-11-19,-3.57%,↓
+160,Facebook,FB,2022-11-20,2.71%,↑
+161,Apple Inc.,AAPL,2022-11-21,-3.11%,↓
+162,Microsoft,MSFT,2022-11-22,1.03%,↑
+163,Amazon,AMZN,2022-11-23,2.58%,↑
+164,NVIDIA,NVDA,2022-11-24,-0.57%,↓
+165,Berkshire Hathaway,BRK.A,2022-11-25,0.17%,↑
+166,Apple Inc.,AAPL,2022-11-26,-4.89%,↓
+167,NVIDIA,NVDA,2022-11-27,2.03%,↑
+168,Tesla,TSLA,2022-11-28,-3.12%,↓
+169,Apple Inc.,AAPL,2022-11-29,0.17%,↑
+170,Microsoft,MSFT,2022-11-30,-0.79%,↓
+171,Google,GOOG,2022-12-01,2.96%,↑
+172,Netflix,NFLX,2022-12-02,-3.85%,↓
+173,Visa,V,2022-12-03,0.49%,↑
+174,Berkshire Hathaway,BRK.A,2022-12-04,-0.35%,↓
+175,Microsoft,MSFT,2022-12-05,3.67%,↑
+176,Apple Inc.,AAPL,2022-12-06,-1.81%,↓
+177,Facebook,FB,2022-12-07,2.03%,↑
+178,Facebook,FB,2022-12-08,3.57%,↑
+179,Berkshire Hathaway,BRK.A,2022-12-09,-1.51%,↓
+180,NVIDIA,NVDA,2022-12-10,1.4%,↑
+181,Tesla,TSLA,2022-12-11,-1.1%,↓
+182,Tesla,TSLA,2022-12-12,2.51%,↑
+183,Tesla,TSLA,2022-12-13,4.92%,↑
+184,Amazon,AMZN,2022-12-14,1.76%,↑
+185,Berkshire Hathaway,BRK.A,2022-12-15,-3.72%,↓
+186,Google,GOOG,2022-12-16,-2.41%,↓
+187,Facebook,FB,2022-12-17,3.08%,↑
+188,Apple Inc.,AAPL,2022-12-18,2.13%,↑
+189,Microsoft,MSFT,2022-12-19,-0.22%,↓
+190,Microsoft,MSFT,2022-12-20,1.59%,↑
+191,Visa,V,2022-12-21,4.4%,↑
+192,Visa,V,2022-12-22,-2.43%,↓
+193,Facebook,FB,2022-12-23,2.24%,↑
+194,Visa,V,2022-12-24,-0.06%,↓
+195,Apple Inc.,AAPL,2022-12-25,-3.41%,↓
+196,NVIDIA,NVDA,2022-12-26,-0.79%,↓
+197,Berkshire Hathaway,BRK.A,2022-12-27,-3.34%,↓
+198,Apple Inc.,AAPL,2022-12-28,1.08%,↑
+199,Visa,V,2022-12-29,-0.38%,↓
+200,Berkshire Hathaway,BRK.A,2022-12-30,-0.1%,↓
