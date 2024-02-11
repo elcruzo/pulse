@@ -33,12 +33,14 @@ def on_change(state, var_name: str, var_value):
 PAGE = '''
 # Pulse
 
+Week number: <|{n_week}|>
+
 <|{n_week}|slider|min=1|max=40|>
 
 ## Performance Analysis After Natural Disasters
 <|{stockdataset}|table|height=400px|width=95%|>
 
-## Bar Graph
+## Trend Graph
 <|{dataset_week}|chart|type=bar|x=Date|y=Value|height=100%|width=100%|>
 
 '''
