@@ -2,7 +2,6 @@ from taipy import Gui
 from taipy.gui import Html
 import pandas as pd
 # import folium
-# Week number: <|{n_week}|>
 
 n_week = 40
 map_url = "index.html"
